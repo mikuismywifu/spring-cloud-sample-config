@@ -6,8 +6,6 @@ server:
 #    resource:
 #      userInfoUri: http://localhost:9999/uaa/user
 spring:
-  profiles:
-    active: dev
   cache:
     redis:
       time-to-live: 6000
