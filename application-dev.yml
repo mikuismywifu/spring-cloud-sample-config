@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    url: jdbc:mysql://114.215.207.144:3306/aalc_pd?useUnicode=true&characterEncoding=utf8&tinyInt1isBit=false
+    username: root
+    password: pmcc*123
+    type: com.alibaba.druid.pool.xa.DruidXADataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    filters:
+    maxActive: 20
+    initialSize: 1
+    maxWait: 60000
+    minIdle: 1
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 'x'
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxOpenPreparedStatements: 20
+  redis:
+      host: 114.215.207.144
+      port: 6379
+      password: pmcc*123
+      pool:
+        max-idle: 20
+        min-idle: 5
+        max-active: 60
+        max-wait: 1000
+      timeout: 5000
+  data:
+    mongodb:
+      username: root
+      password: pmcc*123
+      database: aalc_pd
+      host: 114.215.207.144
+      port: 27017
+ server:
+  port 8071
