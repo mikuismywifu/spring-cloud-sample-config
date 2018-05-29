@@ -35,5 +35,5 @@ spring:
       database: aalc_pd
       host: 114.215.207.144
       port: 27017
- server:
-  port 8071
+server:
+  port: 8071
